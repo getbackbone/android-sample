@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_below="@id/activity_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:id="@+id/trpod_info_tv"/>
+
+
+    <RelativeLayout
+        android:layout_below="@id/trpod_info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/tripod_detail_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Crash"
+            android:layout_margin="10dp"
+
+            />
+
+    <ImageView  android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:src="@drawable/shake_device"
+        android:id="@+id/feature_detail_iv"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
